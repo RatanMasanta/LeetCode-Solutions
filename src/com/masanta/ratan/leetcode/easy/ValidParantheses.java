@@ -1,4 +1,4 @@
-package com.masanta.ratan.leetcode.easy.string.manipulation;
+package com.masanta.ratan.leetcode.easy;
 
 import java.util.HashMap;
 import java.util.Map;
