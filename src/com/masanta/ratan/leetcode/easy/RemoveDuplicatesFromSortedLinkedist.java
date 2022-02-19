@@ -40,4 +40,19 @@ public class RemoveDuplicatesFromSortedLinkedist {
 		}
 		return head;
 	}
+	
+	
+	/*This method seems more faster*/
+	//The appraoch is , we first go at the end and then while returning , if the values of two 
+	//consecutive nodes is same then we return the reference of next node else return the 
+	//node of that particular node 
+	private static ListNode deleteDuplicatesUsingRecursion(ListNode head) {
+		if(head==null || head.next==null)
+            return head;
+        head.next = deleteDuplicates(head.next);
+        if(head.val == head.next.val)
+            return head.next;
+        else
+            return head;
+	}
 }
